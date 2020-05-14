@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" types="text/css" href="..\Survey form\style.css">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="Creator" content="Kidrah">
+    <meta name="keyword" content="HTML">
+  </head>   
+   
+  <body>
+   <header>
+      <h1 id="title">General Survey form</h1>
+      <p id="description"><i>This page is created to know the impact of lockdown on final year students</i></p>
+   </header>
+  <div class="content">
+  <main>
+    <form id="survey-form">
+     <label for="name" class="label">Name</label><br>
+     <input id="name"  type="text" required placeholder="Enter your name"><br>
+
+     <label for="email" class="label">Email</label><br>
+     <input type="email" id="email" required placeholder="Enter your Email"><br>
+
+    <label for="number" class="label">Age:</label><br>
+    <input type="number" id="number" min="15" max="25" placeholder="your age should be between 15 to 25"><br>
+
+    <label for="dropdown" class="label">Course Name</label><br>
+    <select id="dropdown" required>
+      <option>B.Tech</option>
+      <option>B.Pharma</option>
+      <option>B.Com</option>
+      <option>MBA</option>
+      <option>MCA</option>
+      <option>other</option>
+    </select><br>
+    <label for="phone" class="label">Phone No.</label><br>
+    <input type="tel" id="phone" name="phone" pattern="{10}" placeholder="Enter your no.">
+    <fieldset>
+        <legend>You are staying</legend>  
+        <input type="radio" Name="stay" id="family" value="family" class="radio">     
+        <label for="family">With Family</label><br>
+        <input type="radio" Name="stay" id="hostel" value="hostel" class="radio">
+        <label for="hostel">In hostel</label><br>
+        <input type="radio" Name="stay" id="relative" value="relative" class="radio">
+        <label for="relative">with relative</label><br>
+        <input type="radio" Name="stay" id="alone" value="alone" class="radio">
+        <label for="alone">alone</label>
+    </fieldset>
+    <fieldset>
+     <legend>Gender</legend>
+     <input type="radio" Name="gender" id="male" value="male" class="radio">
+     <label for="male">Male</label><br>
+     <input type="radio" Name="gender" id="female" value="female" class="radio">
+     <label for="female">Female</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Imapact on mental health</legend>
+      <input type="checkbox" name="mental-health" value="anxiety" id="anxiety" class="checkbox">
+      <label for="anxiety">Anxiety</label><br>
+      <input type="checkbox" name="mental-health" value="Worried" id="Worried" class="checkbox">
+      <label for="Worried">Worried</label><br>
+      <input type="checkbox" name="mental-health" value="panic" id="panic" class="checkbox">
+      <label for="panic">panic</label><br>
+      <input type="checkbox" name="mental-health" value="nothing" id="nothing" class="checkbox">
+      <label for="nothing">Nothing Bro</label>
+    </fieldset>
+    <fieldset class="checkbox">
+      <legend>Things you missed the most during lockdown</legend><input type="checkbox" name="missing" id="Friends" value="Friends" class="checkbox">
+      <label for="Friends">Friends</label><br>
+      <input type="checkbox" name="missing" id="farewell" value="farewell" class="checkbox">
+      <label for="farewell">Farewell</label><br>
+      <input type="checkbox" name="missing" id="end-sem" value="end-sem" class="checkbox">
+      <label for="end-sem">end sem exam</label><br>
+      <input type="checkbox" name="missing" id="campus" value="campus" class="checkbox">
+      <label for="campus">Campus</label><br>
+      <input type="checkbox" name="missing" id="college" value="college" class="checkbox">
+      <label for="college">College</label><br>
+      <input type="checkbox" name="missing" id="hostel" value="hostel" class="checkbox">
+      <label for="hostel">Hostel</label><br>
+      <input type="checkbox" name="missing" id="night-out" value="night-out" class="checkbox">
+      <label for="night-out">Night Out</label><br>
+      <input type="checkbox" name="missing" id="booze-party" value="booze-party" class="checkbox">
+      <label for="booze-party">Booze party</label>
+    </fieldset>
+     
+     <label for="Suggestion" class="label">Suggestion</label>
+     <textarea rows="10" cols="30" placeholder="Please give your Suggestion to cop-up this situation" id="suggestion"></textarea><br>
+     <button id="submit">Submit</button>
+   </form>
+  </main>
+  
+  <footer>
+   </footer>
+   </div> 
+ </body>
+</html>   
