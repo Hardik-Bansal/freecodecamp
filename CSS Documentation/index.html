@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Documentation</title>
+	<link href="https://fonts.googleapis.com/css2?family=Buenard&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width">
+	<meta name="creator" content="Hardik-Bansal">
+	<meta name="keyword" content="style, css, id, class, elements">
+</head>
+<body>
+	<nav id="navbar">
+		<header><h1>CSS Documentation</h1></header>
+		<div id="link">
+			<a href="#Introduction_to_CSS" class="nav-link">Introduction to CSS</a>
+			<a href="#CSS_Selectors" class="nav-link">CSS Selectors</a>
+			<a href="#Properties" class="nav-link">Properties</a>
+			<a href="#Types_Of_Units" class="nav-link">Types Of Units</a>
+			<a href="#Types_Of_Color" class="nav-link">Types Of Color</a>
+			<a href="#CSS_Box_Model" class="nav-link">CSS Box Model</a>
+			<a href="#Media-Query" class="nav-link">Media Query</a>
+			<a href="#Reference" class="nav-link">Reference</a>
+		</div>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Introduction_to_CSS">
+			<header><h2>Introduction to CSS</h2></header>
+			<p>Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML. Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements.</p><p>CSS has been adopted by all major browsers and allows you to control:</p>
+			<ul>
+				<li>color</li>
+				<li>fonts</li>
+				<li>positioning</li>
+				<li>spacing</li>
+				<li>sizing</li>
+				<li>decorations</li>
+				<li>transitions</li>
+			</ul>
+			<p>There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the<i> style</i> attribute. Alternatively, you can place CSS rules within <i>style</i> tags in an HTML document. Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. Even though the first two options have their use cases, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code.</p>
+		</section>
+		
+		<section class="main-section" id="CSS_Selectors">
+			<header><h2>CSS Selectors</h2></header>
+			<p>Selectors are ways of styling and and changing HTML elements. Different selectors have different applications. We will first learn main 3 Selectors.</p>
+			<ol>
+				<li>Element Selectors: <p>Just write down the name of HTML elements</p>
+				<div class="code-box"><code>
+					h2 {
+						color: red;
+					}
+				</code></div>
+				</li>
+				<li>Class Selectors: <p>We can use class selectors just by adding '.' in front of our class. Classes are reusable styles that can be added to HTML elements.</p>
+				<div class="code-box"><code>
+					.class-name {
+					color: green;
+				}
+				</code></div>
+				</li>
+				<li>ID Selectors: <p>ID selectors can be used by adding '#' in front of our id.</p>
+				<div class="code-box"><code>
+					#id-name {
+					color: blue;
+				}
+				</code></div>
+				</li>
+			</ol>
+		</section>
+		<section class="main-section" id="Properties">
+			<header><h2>Properties</h2></header>
+			<p>These are ways in which you can style an HTML element. In CSS, you choose which properties you want to affect in the rule.</p>
+			<div class="code-box"><code>
+				selector{<br>
+				property: value;<br>
+			}
+			</code></div>
+		</section>
+		<section class="main-section" id="Types_Of_Units">
+			<header><h2>Types Of Units</h2></header>
+			<p>CSS has several different units for expressing a length. There are two types of length units: absolute and relative.</p>
+			<ul>
+				<li>Absolute Lengths: The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+					<ul>
+						<li>cm: centimeters</li>
+						<li>mm: millimeters</li>
+						<li>in: inches</li>
+						<li>px: pixels</li>
+					</ul>
+				</li>
+				<li>Relative Lengths: Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.
+					<ul>
+						<li>em: 	Relative to the font-size of the element.</li>
+						<li>vw: Relative to 1% of the width of the viewport.</li>
+						<li>vh: 	Relative to 1% of the height of the viewport.</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section class="main-section" id="Types_Of_Color">
+			<header><h2>Types Of Color</h2></header>
+			<p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+			<ul>
+				<li>CSS Color Names: In CSS, a color can be specified by using a color name. ex: red, pink, blue, orange.</li>
+				<li>RGB values: rgb(255, 99, 71)</li>
+				<li>HEX value: #ff6347</li>
+				<li>HSL value: hsl(9, 100%, 64%)</li>
+			</ul>
+			<div class="code-box"><code>
+				selector{<br>
+					background-color: red;  /*Color Name example*/<br>
+					color: rgb(255, 99, 71);  /*RGB example*/<br>
+					color: #ff6347;  /*HEX example*/<br>
+					color: hsl(9, 100%, 64%);  /*HSL example*/<br>
+			}
+			</code></div>
+		</section>
+		<section class="main-section" id="CSS_Box_Model">
+			<header><h2>CSS Box Model</h2></header>
+			<p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.</p>
+			<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+			<div class="margin">Margin
+				<div class="border">Border
+					<div class="padding">Padding
+						<div class="content">Content</div>
+					</div>
+				</div>
+			</div>
+			<p>Explanation of the different parts:
+				<ul>
+					<li>Content - The content of the box, where text and images appear</li>
+					<li>Padding - Clears an area around the content. The padding is transparent</li>
+					<li>Border - A border that goes around the padding and content</li>
+					<li>Margin - Clears an area outside the border. The margin is transparent</li>
+				</ul>
+			</p>
+		</section>
+		<section class="main-section" id="Media-Query">
+			<header><h2>Media Query</h2></header>
+			<p>The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.</p>
+			<p>Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).</p>
+			<div class="code-box"><code>
+				@media screen and (min-width: 480px){<br>
+					&nbsp;body {<br>
+						&nbsp;&nbsp;background: pink;<br>
+				&nbsp;&nbsp;}<br>
+			}
+			</code></div>
+		</section>
+		<section class="main-section" id="Reference">
+			<header><h2>Reference</h2></header>
+			<p>All the documentation in this page is taken from: 
+			<ul>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN</a></li>
+				<li><a href="https://www.freecodecamp.org/learn" target="_blank">freecodecamp</a></li>
+				<li><a href="https://www.w3schools.com/" target="_blank">w3schools</a></li>
+			</ul>
+			</p>
+		</section>
+	</main>
+</body>
+</html>

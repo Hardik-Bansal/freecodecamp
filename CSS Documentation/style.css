@@ -1,0 +1,88 @@
+body{
+	font-family: 'Buenard', serif;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	background: black;
+	color: white;
+}
+#navbar{
+	flex: 1 0 300px;
+	border-right: 2px solid white;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+}
+#link{
+	height: 100vh;
+	overflow-y: scroll;
+}
+#link a{
+	color: #07f8e7;
+	display: block;
+	text-decoration: none;
+	font-size: 1.3em;
+	border-top: 1px solid white;
+	padding: 8px 0 8px 8px;
+}
+h1{
+	font-size: 1.8em;
+	text-align: center;
+}
+#main-doc{
+	margin: 5px 20px 5px 20px; 
+}
+h2{
+	font-size: 1.4em;
+}
+p, li{
+	font-size: 1.2em;
+}
+.code-box{
+	padding: 5px 0 5px 15px;
+	background: grey;
+}
+.main-section ul li a{
+	color: white;
+}
+.margin{
+	background: #118C8A;
+	width: 350px;
+	height: 300px;
+	text-align: center;
+	position: relative;
+}
+.border{
+	background: #0B5F5D;
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	left: 25px;
+}
+.padding{
+	background: #073C3B;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50px;
+}
+.content{
+	background: #031C1B;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
+@media screen and (max-width: 800px){
+	body{
+		flex-direction: column;
+		position: relative;
+	}
+	#link{
+		height: 200px;
+	}
+	#navbar{
+		position: relative;
+	}
+}
