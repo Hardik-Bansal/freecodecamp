@@ -141,3 +141,13 @@ footer{
 footer p{
 	margin: 0 15px;
 }
+@media screen and (max-width: 900px){
+	#project-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 600px){
+	#project-grid{
+		grid-template-columns: 1fr;
+	}
+}
