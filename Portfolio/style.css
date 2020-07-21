@@ -151,3 +151,9 @@ footer p{
 		grid-template-columns: 1fr;
 	}
 }
+@media screen and (max-width: 410px){
+	#navbar ul li a{
+	padding: 18px 10px 18px 10px;
+	color: #A8F69A;
+	}
+}
