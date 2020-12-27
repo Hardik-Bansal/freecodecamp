@@ -7,13 +7,12 @@ body{
 }
 
 #image{
+	display: block;
 	max-width: 100%;
 	height: auto;
+	margin: 0 auto;
 }
 
-#img-div{
-	color: 
-}
 @keyframes fade-effect{
 	from{
 		opacity: 0;
